@@ -47,3 +47,11 @@
         </form>
     </div>
 </nav>
+
+<!--msg 있으면 출력한다.-->
+{{#msg}}
+<div class="alert alert-primary alert-dismissible">
+    {{msg}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/msg}}
