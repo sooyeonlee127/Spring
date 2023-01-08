@@ -1,7 +1,8 @@
 {{>layouts/header}}
 
 {{#article}}
-<form class="container" action="" method="post">
+<form class="container" action="/articles/update" method="post">
+    <input name="id" type="hidden" value="{{id}}" />
     <!--    action: 어디로 보낼지-->
     <!--    method: 어떻게 보낼지-->
     <div class="mb-3">

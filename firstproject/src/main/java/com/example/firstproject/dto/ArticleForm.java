@@ -7,6 +7,7 @@ import lombok.ToString;
 @AllArgsConstructor // <생성자> 대신 : 롬복
 @ToString // <ToString 메서드> 대신: 롬복
 public class ArticleForm {
+    private Long id; // id 필드 추가
     private String title;
     private String content;
 
@@ -25,6 +26,6 @@ public class ArticleForm {
 //    }
 
     public Article toEntity() {
-        return new Article(null, title, content);
+        return new Article(id, title, content);
     }
 }
